@@ -1,3 +1,6 @@
+import Sorting from "../components/Sorting";
+import Tasks from "../components/Tasks";
+
 const Home = () => {
     return (
         <>
@@ -18,6 +21,8 @@ const Home = () => {
                     <button className="searchSubmit" type="submit">search</button>
 
                 </article>
+
+                <Sorting />
             </section>
 
             <section className="main">
@@ -31,43 +36,31 @@ const Home = () => {
                         </select>
                     </div>
                 </article>
-                <article className="mainContent">
-                    <div className="internshipCard">
-                        <h2>Internship Title</h2>
-                        <p>Company Name</p>
-                        <p>Location</p>
-                        <p>Duration</p>
-                        <p>Start Date</p>
-                        <p>End Date</p>
-                        <p>Stipend</p>
-                        <p>Posted On</p>
-                    </div>
-                </article>
 
                 <article className="mainContent">
-                    <div className="internshipCard">
-                        <h2>Internship Title</h2>
-                        <p>Company Name</p>
-                        <p>Location</p>
-                        <p>Duration</p>
-                        <p>Start Date</p>
-                        <p>End Date</p>
-                        <p>Stipend</p>
-                        <p>Posted On</p>
-                    </div>
-                </article>
+                    <div className="Cards">
+                        <img src="" alt="" />
+                        <article className="CardsContainer">
+                            <div>
+                                <h2>Company Name</h2>
+                                <p className="CardFont">Internship Title</p>
+                            </div>
 
-                <article className="mainContent">
-                    <div className="internshipCard">
-                        <h2>Internship Title</h2>
-                        <p>Company Name</p>
-                        <p>Location</p>
-                        <p>Duration</p>
-                        <p>Start Date</p>
-                        <p>End Date</p>
-                        <p>Stipend</p>
-                        <p>Posted On</p>
+                            <p>tempus hendrerit eu et purus. Nullam aliquet dolor vel imperdiet accumsan. </p>
+
+                            <div className="CardFlex">
+                                <div>
+                                    <p className="CardFont">Location</p>
+                                    <p className="CardFont">Proffesion</p>
+                                </div>
+                                <a href="aboutUs.jsx">Read more...</a>
+                            </div>
+                        </article>
                     </div>
+                    <Tasks />
+
+
+
                 </article>
             </section>
         </>

@@ -4,10 +4,19 @@ import mongoose from 'mongoose';
 //de titel van de taak, beschrijving, of het compleet is en wanneer het is 
 //aangemaakt.
 const taskSchema = new mongoose.Schema({
-  title: { type: String, required: true },
+  proffesion: { type: String, required: true },
+
+  companyname: { type: String, required: true },
   description: { type: String, required: true },
-  completed: { type: Boolean, default: false },
-  createdAt: { type: Date, default: Date.now }
+
+  duration: { type: String, required: true },
+  location: { type: String, required: true }, 
+
+  stipend: { type: String, required: false },
+  createdAt: { type: Date, default: Date.now },
+
+  img: { type: String, required: true },
+
 });
 
 const Task = mongoose.model('Task', taskSchema);

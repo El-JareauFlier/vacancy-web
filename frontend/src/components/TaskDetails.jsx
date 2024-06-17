@@ -48,14 +48,17 @@ const Tasks = () => {
 
     return (
         <div>
-            <h1>Tasks</h1>
             {/* Weergeven van de taken in een geordende lijst */}
             {tasks.map((task) => (
                 // Elk taakitem wordt weergegeven in een section met een unieke sleutel
                 <section key={task._id}>
-                    <h2>{task.title}</h2>
-                    <p>{task.description}</p>
-                    <button onClick={() => handleDeleteTask(task._id)}>Delete</button>
+                    <img src={task.img} alt={task.companyname} />
+
+                    <article>
+                        <h2>{task.companyname}</h2>
+                        <p>{task.description}</p>
+                        <button onClick={() => handleDeleteTask(task._id)}>Delete</button>
+                    </article>
                 </section>
             ))}
         </div>
